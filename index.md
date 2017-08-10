@@ -1,8 +1,12 @@
-## Welcome to GitHub Pages
+## Juan Pablo Sandoval Alcocer
 
-You can use the [editor on GitHub](https://github.com/jpsandoval/jpsandoval.github.io/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
+Since August 2017, I am part-time professor at the UPB (Universidad Privada Bolivia) and UMSS(Universidad Mayor de San Simon). I founded SemanTics S.R.L, a company that offers specific tools for Software analysis. I am member of the Pharo community.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+My research interests lie in software engineering, more specifically in the fields of software maintenance, mining software repositories, software performance and software visualization. I currently follow two main research tracks: 1) mining static and dynamic information of source code repositories to understand and improve different aspects of the development process and 2) discover approaches, techniques, and tools to improve the way that we build and maintain software. I have additional interests in empirical software engineering and programming languages.
+
+My publications may be found on the common online resources (Google Scholar and DBLP).
+
+
 
 ### Markdown
 
