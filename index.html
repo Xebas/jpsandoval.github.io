@@ -1,0 +1,111 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Hydra by jpsandoval</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/github-light.css">
+    <meta name="viewport" content="width=device-width">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Hydra</h1>
+        <p></p>
+
+        <p class="view"><a href="https://github.com/jpsandoval/hydra">View the Project on GitHub <small>jpsandoval/hydra</small></a></p>
+
+
+        <ul>
+          <li><a href="https://github.com/jpsandoval/hydra/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/jpsandoval/hydra/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/jpsandoval/hydra">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <h3>
+<a id="hydra" class="anchor" href="#hydra" aria-hidden="true"><span class="octicon octicon-link"></span></a>Hydra</h3>
+
+<p><strong>Hydra</strong> is an extension of Spy profiler that support comparison between profiles gathered from multiple software versions. Hydra can be download from <a href="http://smalltalkhub.com/#!/%7Ejuampi/Hydra">smalltalkhub</a>.</p>
+
+<p>Requirements: Hydra take as input a set of Pharo images, each image have installed an specific version of a software project, SMark, Fuel, and Hydra itself. Each image have installed the benchmarks of the projects.</p>
+
+<ul>
+<li>Hydra execute from a pharo image server, a number of benchmarks in all images (each contains a specific software version).</li>
+<li>Hydra collect the number of messages that a benchmark sent during their execution.</li>
+<li>It is also possible collect the number of sent message at method level.</li>
+<li>Hydra also collect static information such as, classes, methods, packages, and method source code.</li>
+</ul>
+
+<h3>
+<a id="creating-a-pharo-image-for-each-software-version" class="anchor" href="#creating-a-pharo-image-for-each-software-version" aria-hidden="true"><span class="octicon octicon-link"></span></a>Creating a Pharo image for each software version</h3>
+
+<p>Hydra provide three different ways to create images with each project versions.</p>
+
+<ul>
+<li>Configuration-based, hydra provides an script that create an image for each version in the configuration. It copy a fresh image from the prototype folder (a folder with a clean image), then load the project version, fuel, smart, hydra and the project benchmarks.</li>
+<li>Package-based, Hydra provides an script that create an image for each version of a simple package. This is  useful when projects have not a configuration and they are saved in smalltalkhub as using only one package.  For instance, Roassal, Shout, NeoCSV, NeoJSON, among others.</li>
+<li>Pharo file server, some projects do not have a configuration, but they are in the continuous integration server of Pharo. Therefore, every single time that these projects are changed, a new Pharo version is released.  In this case, it is possible download al Pharo releases from the <a href="http://files.pharo.org/">server</a>. Hydra provides an script that create an image each time that a Pharo release modify an specific project version, such as, Nautilus, Morphic, among others.</li>
+</ul>
+
+<h3>
+<a id="project--benchmarks" class="anchor" href="#project--benchmarks" aria-hidden="true"><span class="octicon octicon-link"></span></a>Project &amp; Benchmarks</h3>
+
+<p>At following, we list the benchmarks of each software versio</p>
+
+<ul>
+<li>Morphic : <a href="">benchmarks</a> , <a href="">package versions</a>
+</li>
+<li>Spec:  <a href="">benchmarks</a> , <a href="">package versions</a>
+</li>
+<li>Nautilus:  <a href="">benchmarks</a> , <a href="">package versions</a>
+</li>
+<li>Mondrian:  <a href="">benchmarks</a> , <a href="">package versions</a>
+</li>
+<li>Roassal:  <a href="">benchmarks</a> , <a href="">package versions</a>
+</li>
+<li>Rubric:  <a href="">benchmarks</a> , <a href="">package versions</a>
+</li>
+<li>Zinc:  <a href="">benchmarks</a> , <a href="">package versions</a>
+</li>
+<li>GraphET: <a href="">benchmarks</a> , <a href="">package versions</a>
+</li>
+<li>NeoCSV: <a href="">benchmarks</a> , <a href="">package versions</a>
+</li>
+<li>XMLSupport:  <a href="">benchmarks</a> , <a href="">package versions</a>
+</li>
+<li>Regex:  <a href="">benchmarks</a> , <a href="">package versions</a>
+</li>
+<li>Shout:  <a href="">benchmarks</a> , <a href="">package versions</a>
+</li>
+<li>PetitParser:  <a href="">benchmarks</a> , <a href="">package versions</a>
+</li>
+<li>XPath:  <a href="">benchmarks</a> , <a href="">package versions</a>
+</li>
+<li>GTInspector: <a href="">benchmarks</a> , <a href="">package versions</a>
+</li>
+<li>Soup:  <a href="">benchmarks</a> , <a href="">package versions</a>
+</li>
+<li>NeoJSON:  <a href="">benchmarks</a> , <a href="">package versions</a>
+</li>
+</ul>
+
+<h3>
+<a id="lito" class="anchor" href="#lito" aria-hidden="true"><span class="octicon octicon-link"></span></a>LITO</h3>
+
+<p>LITO is a tool that statically analyze the source code changes of a given version to determine if these change could cause a performance regressions. This analisys is done using run-time information gathered from the older versions. It is on <a href="http://smalltalkhub.com/#!/%7Ejuampi/Lito">smalltalkhub</a></p>
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/jpsandoval">jpsandoval</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+    
+  </body>
+</html>
